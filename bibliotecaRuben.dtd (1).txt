@@ -1,0 +1,51 @@
+<! DOCTYPE bibliotecaRuben [
+
+<! ELEMENTO biblioteca (libro *, revistas *, periodicos *)>
+
+<! ATTLIST libro
+    id ID #REQUIRED
+    tipo_clase (novela | infantil | didactico) #REQUIRED
+>
+<! - Declaro todos los elementos de libro ->
+<! ELEMENT libro (titulo, capitulos +)>
+<! ELEMENTO titulo (#PCDATA)>
+<! ELEMENT capitulos (titulo +, indice +, sinopsis, contenido)>
+<! ELEMENTO titulo CDATA>
+<! ELEMENT indice (#PCDATA)>
+<! ELEMENTO sinopsis (#PCDATA)>
+<! ELEMENT contenido (#PCDATA)>
+<! ATTLIST contenido enlace CDATA #REQUIRED>
+
+<! ATTLIST revistas
+    id ID #REQUIRED
+    tipo_clase (informatica | corazon | coches | investigacion | otras) #REQUIRED
+    numero_paginas CDATA #REQUIRED
+>
+
+<! ELEMENT revistas (titulo, numeroRevista, indice +, secciones +)>
+<! ELEMENTO titulo (#PCDATA)>
+<! ELEMENTO numeroRevista (#PCDATA)>
+<! ELEMENT indice CDATA>
+<! ELEMENTO secciones (nombreSeccion +, contenido +)>
+<! ATTLIST secciones num_paginas CDATA #REQUIRED>
+<! ELEMENTO nombreSeccion (#PCDATA)>
+
+
+<! ATTLIST periodicos
+    id ID #REQUIRED
+    tipo_clase (nacional | internacional) #REQUERIDO
+    fecha CDATA #REQUIRED
+>
+
+
+<! ELEMENTO periodicos (seccion *)>
+<! ATTLIST seccion tipo_seccion (economica | opinion | deportes | nacional | internacional) #REQUIRED>
+<! ELEMENT seccion (indice +, articulo +)>
+<! ELEMENT indice (#PCDATA)>
+<! ELEMENT articulo (contenido)>
+<! ATTLIST articulo autor CDATA #REQUIRED>
+]>
+
+
+
+
