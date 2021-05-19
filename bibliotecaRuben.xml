@@ -1,0 +1,129 @@
+<? xml versión = " 1.0 " codificación = " UTF-8 " ?>
+<! DOCTYPE  biblioteca SYSTEM "bibliotecaRuben.xml">
+
+< biblioteca >
+<! - -
+    Libros 
+->
+
+    < libro  id = " L0001 "  tipo_clase = " novela " >
+        < titulo > Don Quijote de la Mancha </ titulo >
+        < capitulo >
+            < titulo >Capítulo 1 </ titulo >
+            < indice >Páginas 1 a 1 </ indice >
+            < sinopsis >Que trata de la condición y ejercicio del famoso y valiente hidalgo don Quijote de la Mancha </ sinopsis>
+            < contenido  enlace = " https://www.elpais.com" </ contenido >
+        </ capitulo >
+        < capitulos >
+            
+    </ libro >
+
+    < libro  id = " L0002 "  tipo_clase = " infantil " >
+        < titulo > La Oca Loca, Gloria Fuertes </ titulo >
+        < capitulos >
+            < titulo > La Oca Loca capítulo 1 </ titulo >
+            < indice > Página 7 </ indice >
+            < sinopsis > Sinopsis caítulo 1 </ Sinopsis >
+            < contenido  enlace = " https://www.elpais.com" > </ contenido >
+        </ capitulos >
+        < capitulos >
+            < titulo > Este es el título del capítulo 2 </ titulo >
+            < indice > El capítulo 2 se encuentra entre las páginas 6 a 15 </ indice >
+    </ libro >
+    < libro  id = " L0002 "  tipo_clase = " didáctico " >
+        < titulo > Matemáticas para torpes</ titulo >
+        < capitulos >
+            < titulo > Capítulo 1 </ titulo >
+            < indice > Páginas 1 a 5</ indice >
+            < sinopsis > Introduccón a las matemáticas </ Sinopsis >
+            < contenido  enlace = " https://www.elpais.com" > </ contenido >
+        </ capitulos >
+    </ libro >
+    <! - -
+    Revistas 
+    ->
+    < revistas  id = " R0001 "  tipo_clase = " informatica ">
+        < titulo > BitActual </ titulo >
+        < numeroRevista > 0001 </ numeroRevista >
+        < índice > Contenido 1 </ índice >
+        < secciones  numeropaginas = " 5 " >
+            < nombreSeccion > Seccion 1 </ nombreSeccion >
+            < contenido  enlace = " https://www.bitactual.com" ></ contenido >
+        </ secciones >
+        
+        
+    </ revistas >
+
+    < revistas  id = " R0001 "  tipo_clase = " corazón "  numero_paginas = " 40 " >
+        < titulo > Diez Minutos </ titulo >
+        < numeroRevista > 0001 </ numeroRevista >
+        < índice > Contenido 1 </ índice >
+            < secciones  num_paginas = " 10 " >
+                < nombreSeccion > Seccion 1 </ nombreSeccion >
+                < contenido  enlace = " https://www.diezminutos.com" ></ contenido >
+            </ secciones >
+            
+        
+    </ revistas >
+    <revistas id= "R0001" tipo:clase="coches" numero_paginas="30">
+	<titulo>Autopista</titulo>
+	<numeroRevista>0001</numeroRevista>
+	<indice>Contenido 1</indice>
+		<secciones numero_paginas="20">
+			<nombreSeccion>Seccion 1</nombreSeccion>
+			<contenido enlace="https://www.autopista.com"></contenido>
+		</secciones>
+    </revistas>
+    </ revistas >
+    <revistas id= "R0001" tipo:clase="investigación" numero_paginas="35">
+	<titulo>Quo</titulo>
+	<numeroRevista>0001</numeroRevista>
+	<indice>Contenido 1</indice>
+		<secciones numero_paginas="5">
+			<nombreSeccion>Seccion 1</nombreSeccion>
+			<contenido enlace="https://www.quo.com"></contenido>
+		</secciones>
+    </revistas>
+    <revistas id= "R0001" tipo:clase="otras revistas" numero_paginas="50">
+	<titulo>Cinco Dias</titulo>
+	<numeroRevista>0001</numeroRevista>
+	<indice>Contenido 1</indice>
+		<secciones numero_paginas="5">
+			<nombreSeccion>Seccion 1</nombreSeccion>
+			<contenido enlace="https://www.cincodias.com"></contenido>
+		</secciones>
+    </revistas>
+
+<! - -
+Periódicos
+    ->
+    < periodicos  id = " P0001 "  tipo_clase = " nacional "  fecha = " 01/01/2021 " >
+        < seccion  tipo_seccion = " nacional" >
+            < indice > pagina 1 a 5 </ indice >
+            < articulo  autor = " Raul del Pozo " >
+                < contenido  enlace = " https://www.elpais.com" > Nacional </ contenido >
+            </ articulo >
+	    </seccion>
+            
+        
+        < seccion  tipo_seccion = " deportes " >
+            < indice > paginas 15 a 18 </ indice >
+            < articulo  autor = " Miguel Indurain " >
+                < contenido  enlace = " https://www.elpais.com" > Deportes </ contenido >
+            </ articulo >
+            </seccion>
+
+    </ periodicos >
+
+    < periodicos  id = " P0001 "  tipo_clase = " internacional "  fecha = " 01/01/2021 " >
+        < seccion  tipo_seccion = " Europa " >
+        < indice > Paginas 10 a 12 </ indice >
+            < articulo  autor = " Javier Sanz" >
+                < contenido  enlace = " https://www.elpais.com" > Europa </ contenido >
+            </ articulo >
+  
+        </ seccion >
+        
+
+    </ periodicos >
+</ biblioteca >
